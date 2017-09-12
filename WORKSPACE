@@ -1,7 +1,7 @@
 git_repository(
     name = "io_bazel_rules_docker",
     remote = "https://github.com/bazelbuild/rules_docker.git",
-    tag = "v0.1.0",
+    commit = "65df68f4f64e9c59eb571290eb86bf07766393b6",
 )
 
 load("@io_bazel_rules_docker//docker:docker.bzl", "docker_repositories")
@@ -11,9 +11,8 @@ docker_repositories()
 git_repository(
     name = "io_bazel_rules_go",
     remote = "https://github.com/bazelbuild/rules_go.git",
-    commit = "4be196cc186da9dd396d5a45a3a7f343b6abe2b0",
+    tag = "0.5.4",
 )
-
 load("@io_bazel_rules_go//go:def.bzl", "go_repositories")
 
 go_repositories()
